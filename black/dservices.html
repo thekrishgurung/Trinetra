@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+        <!-- main color #040505
+        second main #1a1b1a
+        third main #3e3f3e
+        fourth main #a4a5a4
+        fifth main #d7d7d6  --> 
+		<meta charset = "UTF-8">
+		<title> trinetra main page </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Poppins", sans-serif;
+            }
+            body{
+                color: white;
+            }
+            .background{
+                width: 100%;
+                height: 100vh;
+                color: aliceblue;
+                background-color: #040505;
+                background-image: url("/black/nepalb40.jpeg");
+                background-size: cover;
+                position: relative
+            }
+            .nav{
+                background-color: #040505;
+                opacity: 0.6;
+                width: 100%;
+                height: 10%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                /* padding: 20px 8% */
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+              /* .video {
+                z-index: -1;
+              } */
+            .nav .logo{
+                width: 100px;
+            }
+            nav ul li{
+                list-style: none;
+                display: inline-block;
+                margin-left: 50px;
+                margin-right: 100px;
+            }
+            .nav ul li a{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+            }
+            .nav ul li a:hover{
+                /* -webkit-text-stroke: #020433; */
+                color: #797979;
+                transition: 0.3s;
+            }
+            #services{
+                text-decoration: none;
+                text-align: center;
+                border: 2px solid red;
+            }
+            .ss{
+                margin: 2%;
+                padding: 2%;
+                border: 2px solid black;
+                width: 29%;
+                justify-content: center;
+                height: 40vh;
+                float: left;
+            }
+            .footer{
+                background-color: #040505;
+                text-align: center;
+                height: 5%;
+                width: 100%;
+                top: 95%;
+                left: 0;
+                color: white;
+                position: relative;
+            }
+            .footer p{
+                padding-top: 10px;
+            }
+            /* .video {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: 0;
+            }
+            @media(min-aspect-ratio: 16/9){
+                .video{
+                width: 100%;
+                height: auto;
+                }
+            }
+            @media(max-aspect-ratio: 16/9){
+                .video{
+                width: auto;
+                height: 100%;
+                }
+            } */
+
+        </style>
+	</head>
+	<body>
+		<div class="background">
+<!-- 
+            <video autoplay loop plays-inline class="video">
+                <source src="/animation.mp4">
+            </video> -->
+
+            <nav>
+                <img src="/black/TrinetraLogo.png" class="logo" alt="failed to load logo">
+                <ul>
+                    <li><a href="/black/darkmpage.html">Home</a></li>
+                    <li><a href="/black/dservices.html">Services</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="/black/darklogin.html">Login</a></li>
+                    <li><a href="/black/darksignup.html">Signup</a></li>
+                </ul>
+            </nav>
+            <div id="services">
+                <h2>Our services</h2>
+                <div class="ss pakspot">
+                    <h3>Special Paking spot for Regular User</h3>
+                </div>
+                <div class="ss prebook">
+                    <h3>Early Pre-booking</h3>
+                </div>
+                <div class="ss wpack">
+                    <h3>Weekly package</h3>
+                </div>
+                <div class="ss mpack">
+                    <h3>Monthly Package</h3>
+                </div>
+                <div class="ss qpack">
+                    <h3>Quaterly Package</h3>
+                </div>
+                <div class="ss ypack">
+                    <h3>Yearly Package</h3>
+                </div>
+            </div>
+            <div class="footer">
+                <p> &copy; 2023 Trinetra Inc.&#8482; &nbsp; Kathmandu, Nepal. &nbsp; All Rights Reserved.</p>
+            </div>
+        </div>
+	
+	</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+        <!-- main color #020433
+        second main #181843
+        third main #34355b
+        fourth main #9293a2
+        fifth main #c0c1c9  -->
+		<meta charset = "UTF-8">
+		<title> trinetra main page </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Poppins", sans-serif;
+              }
+              body{
+                background-color: #e6dff5;
+                color: white;
+              }
+              .background{
+                width: 100%;
+                height: 100vh;
+                color: aliceblue;
+                background-color: #020433;
+                background-image: url("/nepal30.jpeg");
+                background-size: cover;
+                position: relative
+              }
+              nav{
+                background-color: #020433;
+                opacity: 0.6;
+                width: 100%;
+                height: 10%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                /* padding: 20px 8% */
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              }
+              /* .video {
+                z-index: -1;
+              } */
+              nav .logo{
+                width: 100px;
+              }
+              nav ul li{
+                list-style: none;
+                display: inline-block;
+                margin-left: 50px;
+                margin-right: 100px;
+              }
+              nav ul li a{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+              }
+              nav ul li a:hover{
+                /* -webkit-text-stroke: #020433; */
+                color: #787ce6;
+                transition: 0.3s;
+              }
+              .locations{
+                position: absolute;
+                float: left;
+                background-color: white;
+                border-radius: 13px; 
+                width: 30%;
+                color: #02032b;
+                margin-left: 1%;
+                top: 30%;
+                left: 10px;
+                height: 40%;
+                /* border: black; */
+                z-index: 0;
+                text-align: center;
+                padding: 1%;
+                opacity: 0.7;
+                box-shadow: 8px 8px 15px 8px #00011d;
+              }
+              .section {
+                margin-top: 2%;
+                height: 90%;
+                width: 100%;
+                text-align: center;
+                /* overflow: auto; */
+                overflow: auto;
+                color: white;
+                border-radius: 13px;
+                /* clear: left; */
+              }
+              .section tr{
+                position: relative;
+                /* width: 100%; */
+                text-align: center;
+                background-color: #020433;
+              }
+              td{
+                padding: 3%;
+              }
+              tr:hover {
+                background-color: #34355b;
+                transition: 0.5s;
+              }
+              .footer{
+                background-color: #02032b;
+                text-align: center;
+                height: 5%;
+                width: 100%;
+                top: 95%;
+                left: 0;
+                color: white;
+                position: relative;
+              }
+              .footer p{
+                padding-top: 10px;
+              }
+              .video {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: 0;
+              }
+              @media(min-aspect-ratio: 16/9){
+                .video{
+                width: 100%;
+                height: auto;
+                }
+              }
+              @media(max-aspect-ratio: 16/9){
+                .video{
+                width: auto;
+                height: 100%;
+                }
+              }
+
+        </style>
+	</head>
+	<body>
+		<div class="background">
+
+            <video autoplay loop plays-inline class="video">
+                <source src="/animation.mp4">
+            </video>
+
+            <nav>
+                <img src="TrinetraLogo.png" class="logo" alt="failed to load logo">
+                <ul>
+                    <li><a href="/mpage.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="/Login.html">Login</a></li>
+                    <li><a href="/signup.html">Signup</a></li>
+                </ul>
+            </nav>
+
+            <div class="locations">
+                <form action="backend.php">
+                    Location: <input type="text" name="cities">
+                    <input type="submit" value="search">
+                </form>
+                <hr style="margin-top: 1%;">
+                <div class="section">
+                    <table style="width: 100%;">
+                        <tbody>
+                            <tr><td>New Road</td></tr>
+                            <tr><td>Baneshwor</td></tr>
+                            <tr><td>Budanilkankha</td></tr>
+                            <tr><td>Swayambhu</td></tr>
+                            <tr><td>Sanepa</td></tr>
+                            <tr><td>Putalisadak</td></tr>
+                            <tr><td>Koteshwor</td></tr>
+                            <tr><td>Durbar Marg</td></tr>
+                            <tr><td>Tirpureshwor</td></tr>
+                            <tr><td>Chakrapath</td></tr>
+                            <tr><td>Teku</td></tr>
+                            <tr><td>Satdobato</td></tr>
+                            <tr><td>Jawlakhel</td></tr>
+                            <tr><td>banasthali</td></tr>
+                            <tr><td>balaju</td></tr>
+                            <tr><td>Sundhara</td></tr>
+                            <tr><td>Maitighar</td></tr>
+                            <tr><td>Buspark</td></tr>
+                            <tr><td>Maharajgunj</td></tr><tr><td>New Road</td></tr>
+                            <tr><td>Machhapokhari</td></tr>
+                            <tr><td>TU Airport</td></tr>
+                            <tr><td>Thamel</td></tr>
+                            <tr><td>Chabhil</td></tr>
+                            <tr><td>Sorahkhutte</td></tr>
+                            <tr><td>Kalimati</td></tr>
+                            <tr><td>Kalanki</td></tr>
+                            <tr><td>Basundhara</td></tr>
+                            <tr><td>Ekantakuna</td></tr>
+                            <tr><td>Lazimpath</td></tr>
+                            <tr><td>Naxal</td></tr>
+                            <tr><td>Kalopul</td></tr>
+                            <tr><td>Jamal</td></tr>
+                            <tr><td>Thankot</td></tr>
+                            <tr><td>Satungal</td></tr>
+                            <tr><td>Tokha</td></tr>
+                            <tr><td>Gaushala</td></tr>
+                            <tr><td>Tinkune</td></tr>
+                            <tr><td>Kupondole</td></tr>
+                            <tr><td>Pulchowk</td></tr>
+                            <tr><td>Sitapaila</td></tr>
+                            <tr><td>Sukedhara</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="status">
+
+            </div>
+
+            <div class="footer">
+                <p> &copy; 2023 Trinetra Inc.&#8482; &nbsp; Kathmandu, Nepal. &nbsp; All Rights Reserved.</p>
+            </div>
+        </div>
+	
+	</body>
+</html>
